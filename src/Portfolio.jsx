@@ -3,7 +3,6 @@ import NavBar from "./components/NavBar.jsx";
 import Hero from "./components/Hero.jsx";
 import AboutMe from "./components/AboutMe.jsx";
 import Projects from "./components/Projects.jsx";
-import Skills from "./components/Skills.jsx";
 import SectionHeading from "./components/SectionHeading.jsx";
 import Section from "./components/Section.jsx";
 
@@ -36,11 +35,6 @@ const PROJECTS = [
   },
 ];
 
-const SKILLS = [
-  { category: "Web", items: ["Laravel", "Blade", "HTML", "CSS", "MySQL", "SQLite"] },
-  { category: "AI / ML", items: ["TensorFlow", "CNN", "DQN", "LangChain", "LangGraph"] },
-  { category: "Languages", items: ["Python", "PHP", "JavaScript"] },
-];
 
 // Deprecated
 // const TECH_LIST = ["Laravel", "PHP", "HTML/CSS", "SQL", "Python",];
@@ -74,10 +68,6 @@ export default function Portfolio() {
         <Projects projects={PROJECTS} />
       </Section>
 
-      <Section id="skills" heading={<SectionHeading label="skills" />}>
-        <Skills groups={SKILLS} />
-      </Section>
-
       <Section id="contact" heading={<SectionHeading label="contact" />} minHeight="min-h-[60vh]">
         <div className="text-center max-w-lg mx-auto">
           <p className="text-teal-400 font-mono text-sm mb-3">what's next?</p>
@@ -86,7 +76,7 @@ export default function Portfolio() {
             I'm currently looking for internship and freelance opportunities. Whether you have a question, a project, or just want to say hi — my inbox is open.
           </p>
           <a
-            href="mailto:your@email.com"
+            href="mailto:robroineo2@gmail.com"
             className="inline-block px-8 py-3.5 border border-teal-400 text-teal-400 no-underline rounded font-mono text-sm hover:bg-teal-400/10 transition-colors duration-200"
           >
             Say hello ✉

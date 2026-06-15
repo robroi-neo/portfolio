@@ -28,7 +28,7 @@ export default function HeroImage({ src, alt = "Hero image", className = "" }) {
   }, [src]);
 
   return (
-    <div className={`h-128 w-64 flex-shrink-0 rounded-lg ${className}`}>
+    <div className={`h-128 w-128 flex-shrink-0 rounded-lg ${className}`}>
       {htmlContent ? (
         <iframe
           title={alt}
