@@ -1,16 +1,46 @@
-# React + Vite
+# Rob's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website! I'm **Rob**, a third-year Computer Science student from the Philippines with a passion for full-stack web development and applied AI/Machine Learning.
 
-Currently, two official plugins are available:
+## About Me
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+I specialize in building scalable web applications using modern frameworks like **Laravel** and **React**, while experimenting with cutting-edge AI technologies. I'm currently seeking internship and freelance opportunities to apply my skills to real-world projects.
 
-## React Compiler
+### Skills & Expertise
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Web Development**
+- Laravel, Blade templating, HTML/CSS, MySQL, SQLite
 
-## Expanding the ESLint configuration
+**AI & Machine Learning**
+- TensorFlow, Convolutional Neural Networks (CNN), Deep Q-Learning (DQN), LangChain, LangGraph
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Programming Languages**
+- Python, PHP, JavaScript
+
+## Featured Projects
+
+- **Hardware Management System** — Full-stack inventory management built with Laravel and SQLite
+- **DQN Snake Agent** — Deep Q-Network trained to play Snake using reinforcement learning
+- **Facial Emotion Recognition** — Real-time emotion detection using CNNs and computer vision
+- **Agentic ROG Terraria Wrapper** — AI-powered Terraria game agent built with LangChain and LangGraph
+
+## This Project
+
+This portfolio is built with **React + Vite**, featuring smooth scroll navigation, responsive design, and a modern dark theme. It showcases my projects, skills, and contact information.
+
+### Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+### Build
+
+```bash
+npm run build
+```
+
+---
+
+**Let's connect!** Check out my [GitHub](https://github.com/robroi-neo) or reach out via email on my portfolio site.
