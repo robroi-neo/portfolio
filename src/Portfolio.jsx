@@ -29,7 +29,7 @@ const PROJECTS = [
   },
   {
     title: "Agentic ROG Terraria Wrapper",
-    desc: "AI agent built with LangChain and LangGraph that wraps Terraria gameplay — an experiment in agentic AI for game interaction.",
+    desc: "An LLM Model that uses the terraria wiki as context through word embeddings to answer Terraria Progression Queries.",
     tags: ["Python", "Streamlit", "GROQ"],
     link: "https://github.com/robroi-neo/terraria-agentic",
   },
@@ -58,7 +58,7 @@ export default function Portfolio() {
     <div className="bg-[#0a0f1c] min-h-screen text-slate-400 font-sans">
       <NavBar active={activeSection} />
 
-      <Hero id="hero"/>
+      <Hero id="home"/>
 
       <Section id="about" heading={<SectionHeading label="about me" />}>
         <AboutMe />

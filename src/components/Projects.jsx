@@ -6,9 +6,12 @@ function Tag({ label }) {
   );
 }
 
-function ProjectCard({ project }) {
+function ProjectCard({ project, index }) {
   return (
-    <div className="flex flex-col gap-3 p-6 rounded-lg border bg-[#0d1b2e] border-[#1e3a5f]">
+    <div
+      className="project-card-enter flex flex-col gap-3 p-6 rounded-lg border bg-[#0d1b2e] border-[#1e3a5f] transition-all duration-300 ease-out hover:-translate-y-2 hover:border-teal-400/35 hover:shadow-[0_18px_50px_rgba(20,184,166,0.12)] hover:bg-[#10223a] motion-reduce:transition-none motion-reduce:transform-none"
+      style={{ animationDelay: `${index * 120}ms` }}
+    >
       <div className="flex justify-between items-start">
         <span className="text-xl text-slate-300">⬡</span>
         <a
@@ -36,8 +39,8 @@ function ProjectCard({ project }) {
 export default function Projects({ projects }) {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5">
-      {projects.map((p) => (
-        <ProjectCard key={p.title} project={p} />
+      {projects.map((p, index) => (
+        <ProjectCard key={p.title} project={p} index={index} />
       ))}
     </div>
   );

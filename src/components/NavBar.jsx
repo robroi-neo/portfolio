@@ -1,6 +1,6 @@
 import githubLogo from "../assets/github-logo.svg";
 
-const NAV_LINKS = ["about", "projects", "contact"];
+const NAV_LINKS = ["home","about", "projects", "contact"];
 
 export default function NavBar({ active }) {
   const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
