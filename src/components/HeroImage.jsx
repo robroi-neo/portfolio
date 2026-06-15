@@ -2,12 +2,13 @@ import { useEffect, useState } from "react";
 
 export default function HeroImage({ src, alt = "Hero image", className = "" }) {
   const [htmlContent, setHtmlContent] = useState("");
+  const isHtmlSource = typeof src === "string" && src.endsWith(".html");
 
   useEffect(() => {
     let isActive = true;
 
     async function loadHtml() {
-      if (!src || !src.endsWith(".html")) {
+      if (!isHtmlSource) {
         setHtmlContent("");
         return;
       }
@@ -25,11 +26,11 @@ export default function HeroImage({ src, alt = "Hero image", className = "" }) {
     return () => {
       isActive = false;
     };
-  }, [src]);
+  }, [src, isHtmlSource]);
 
   return (
-    <div className={`h-128 w-128 flex-shrink-0 rounded-lg ${className}`}>
-      {htmlContent ? (
+    <div className={`h-[32rem] w-[32rem] max-w-[90vw] flex-shrink-0 rounded-lg ${className}`}>
+      {isHtmlSource && htmlContent ? (
         <iframe
           title={alt}
           srcDoc={htmlContent}
@@ -37,6 +38,13 @@ export default function HeroImage({ src, alt = "Hero image", className = "" }) {
           style={{ zoom: 0.45 }}
           scrolling="no"
           aria-label={alt}
+        />
+      ) : src ? (
+        <img
+          src={src}
+          alt={alt}
+          className="h-full w-full object-contain"
+          loading="lazy"
         />
       ) : (
         <div

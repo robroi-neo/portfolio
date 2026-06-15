@@ -48,7 +48,7 @@ function Cursor({ done }) {
   );
 }
 
-const heroAsciiArt = new URL("../assets/hero.html", import.meta.url).href;
+const heroAsciiArt = new URL("../assets/HeroImage.svg", import.meta.url).href;
 
 export default function Hero({ id }) {
   const { displayed, done } = useTyped(TYPED_TEXT, TYPING_SPEED, START_DELAY);
@@ -66,14 +66,14 @@ export default function Hero({ id }) {
           {" "}
         </h1>
         <p className="max-w-md leading-relaxed text-[15px] mb-7">
-          CS student in the Philippines — I build full-stack web apps with Laravel and experiment with AI and Machine learning. Currently on the lookout for internship and freelance opportunities.
-        </p>
-        <div className="flex gap-4 flex-wrap">
-          <a
-            href="https://github.com/robroi-neo"
-            target="_blank"
-            rel="noreferrer"
-            className="px-6 py-3 border border-teal-400 text-teal-400 no-underline rounded font-mono text-sm hover:bg-teal-400/10 transition-colors duration-200"
+        CS student in the Philippines — I build full-stack web apps with Laravel and experiment with AI and Machine learning. Currently on the lookout for internship and freelance opportunities.
+      </p>
+      <div className="flex gap-4 flex-wrap">
+        <a
+          href="https://github.com/robroi-neo"
+          target="_blank"
+          rel="noreferrer"
+          className="px-6 py-3 border border-teal-400 text-teal-400 no-underline rounded font-mono text-sm hover:bg-teal-400/10 transition-colors duration-200"
           >
             View GitHub ↗
           </a>
