@@ -5,6 +5,7 @@ import AboutMe from "./components/AboutMe.jsx";
 import Projects from "./components/Projects.jsx";
 import SectionHeading from "./components/SectionHeading.jsx";
 import Section from "./components/Section.jsx";
+import Footer from "./components/Footer.jsx";
 
 // bro stop changing home to hero. dont be stupiddddddddddddddddddddd
 const NAV_LINKS = ["home", "about", "projects", "contact"];
@@ -69,32 +70,24 @@ export default function Portfolio() {
         <Projects projects={PROJECTS} />
       </Section>
 
-    <Section id="contact" heading={<SectionHeading label="contact" />} minHeight="min-h-[60vh]">
-      <div className="flex flex-col items-center justify-center gap-4 mb-4">
-        <p className="text-teal-400 font-mono text-sm mb-3">what's next?</p>
-        <h2 className="flex text-slate-200 text-4xl font-semibold mb-4">Get In Touch</h2>
-        <p className="text-center mb-8 px-40">
-          I'm currently looking for internship and freelance opportunities. 
-          Whether you have a question, a project, or just want to say hi — my inbox is open.
-        </p>
-        <a
-          href="mailto:robroineo2@gmail.com"
-          className="inline-block px-8 py-3.5 border border-teal-400 text-teal-400 no-underline rounded font-mono text-sm hover:bg-teal-400/10 transition-colors duration-200"
-        >
-          Say hello ✉
-        </a>
-      </div>
-    </Section>
+      <Section id="contact" heading={<SectionHeading label="contact" />} minHeight="min-h-[70vh]">
+        <div className="flex flex-col items-center justify-center gap-4 mb-4">
+          <p className="text-teal-400 font-mono text-sm mb-3">what's next?</p>
+          <h2 className="flex text-slate-200 text-4xl font-semibold mb-4">Get In Touch</h2>
+          <p className="text-center mb-8 px-40">
+            I'm currently looking for internship and freelance opportunities. 
+            Whether you have a question, a project, or just want to say hi — my inbox is open.
+          </p>
+          <a
+            href="mailto:robroineo2@gmail.com"
+            className="inline-block px-8 py-3.5 border border-teal-400 text-teal-400 no-underline rounded font-mono text-sm hover:bg-teal-400/10 transition-colors duration-200"
+          >
+            Say hello ✉
+          </a>
+        </div>
+      </Section>
 
-      <footer className="text-center py-8 text-xs text-slate-500 font-mono flex justify-center align-center gap-4">
-        built by Robroi {" "}
-        <a href="https://github.com/robroi-neo" className="text-teal-400 no-underline hover:underline">
-          · robroi-neo 
-        </a>
-        <p>
-          · robroineo2@gmail.com
-        </p>
-      </footer>
+      <Footer />
     </div>
   );
 }
