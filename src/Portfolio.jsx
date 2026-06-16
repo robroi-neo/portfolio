@@ -7,6 +7,11 @@ import SectionHeading from "./components/SectionHeading.jsx";
 import Section from "./components/Section.jsx";
 import Footer from "./components/Footer.jsx";
 
+import CertDatabases from "./assets/cert-databases.png";
+import CertJava from "./assets/cert-java.png";
+
+
+
 // bro stop changing home to hero. dont be stupiddddddddddddddddddddd
 const NAV_LINKS = ["home", "about", "projects", "contact"];
 
@@ -69,6 +74,30 @@ export default function Portfolio() {
       <Section id="projects" heading={<SectionHeading label="projects" />}>
         <Projects projects={PROJECTS} />
       </Section>
+      
+      <Section id="certs" heading={<SectionHeading label="certs" />}>
+        <div className="grid gap-6 md:grid-cols-2">
+          <div className="flex items-start gap-4 bg-[#071022]/40 p-4 rounded border border-teal-400/5">
+            <img src={CertJava} alt="Certificate - Java" className="w-36 h-auto rounded-md shadow-sm" />
+            <div>
+              <h3 className="text-slate-200 font-semibold">IT Specialist - Java</h3>
+              <p className="text-sm text-teal-400 font-mono mt-1">Certiport - A Pearson VUE Business</p>
+              <p className="text-sm text-slate-400 mt-2">Issued Mar 2024</p>
+              <p className="text-xs text-slate-500 font-mono mt-1 break-words">Credential ID 430ce1cd-c6c1-4280-8980-545f84763f60</p>
+            </div>
+          </div>
+
+          <div className="flex items-start gap-4 bg-[#071022]/40 p-4 rounded border border-teal-400/5">
+            <img src={CertDatabases} alt="Certificate - Databases" className="w-36 h-auto rounded-md shadow-sm" />
+            <div>
+              <h3 className="text-slate-200 font-semibold">IT Specialist - Databases</h3>
+              <p className="text-sm text-teal-400 font-mono mt-1">Certiport - A Pearson VUE Business</p>
+              <p className="text-sm text-slate-400 mt-2">Issued Mar 2025</p>
+              <p className="text-xs text-slate-500 font-mono mt-1 break-words">Credential ID 21b20f2a-481d-4abb-82b1-a0e51e8585f9</p>
+            </div>
+          </div>
+        </div>
+      </Section>
 
       <Section id="contact" heading={<SectionHeading label="contact" />} minHeight="min-h-[70vh]">
         <div className="flex flex-col items-center justify-center gap-4 mb-4">
@@ -86,6 +115,8 @@ export default function Portfolio() {
           </a>
         </div>
       </Section>
+
+
 
       <Footer />
     </div>
