@@ -6,7 +6,8 @@ import Projects from "./components/Projects.jsx";
 import SectionHeading from "./components/SectionHeading.jsx";
 import Section from "./components/Section.jsx";
 
-const NAV_LINKS = ["hero", "about", "projects", "contact"];
+// bro stop changing home to hero. dont be stupiddddddddddddddddddddd
+const NAV_LINKS = ["home", "about", "projects", "contact"];
 
 const PROJECTS = [
   {
@@ -58,7 +59,7 @@ export default function Portfolio() {
     <div className="bg-[#0a0f1c] min-h-screen text-slate-400 font-sans">
       <NavBar active={activeSection} />
 
-      <Hero id="home"/>
+      <Hero id="home" />
 
       <Section id="about" heading={<SectionHeading label="about me" />}>
         <AboutMe />
