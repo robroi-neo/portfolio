@@ -5,7 +5,8 @@ export default function AboutMe() {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
       <div className="leading-loose text-lg space-y-4 min-w-0">
         <p>I'm a third-year Computer Science student from the Philippines with a focus on full-stack web development and applied AI/ML.</p>
-        <p className="">I spend my freetime reading, playing video games, and going to the gym!</p>
+        <p className="">I spend my free time reading, playing video games, and going to the gym. I also really enjoy visiting various cafés, primarily for the food and coffee, and sometimes to get some work done.</p>
+        <p className="">I'll add some cafe blogs on this site sometime 😊</p>
       </div>
 
       <div className="flex items-center justify-center md:justify-end min-w-0">
