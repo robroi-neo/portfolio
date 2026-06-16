@@ -2,6 +2,8 @@
 
 Welcome to my personal portfolio website! I'm **Rob**, a third-year Computer Science student from the Philippines with a passion for full-stack web development and applied AI/Machine Learning.
 
+Link: https://portfolio-zeta-coral-nccz0ba8s0.vercel.app/
+
 ## About Me
 
 I specialize in building scalable web applications using modern frameworks like **Laravel** and **React**, while experimenting with cutting-edge AI technologies. I'm currently seeking internship and freelance opportunities to apply my skills to real-world projects.
@@ -9,13 +11,13 @@ I specialize in building scalable web applications using modern frameworks like 
 ### Skills & Expertise
 
 **Web Development**
-- Laravel, Blade templating, HTML/CSS, MySQL, SQLite
+- Laravel, Blade templating, HTML/CSS, Tailwind, MySQL, SQLite
 
 **AI & Machine Learning**
-- TensorFlow, Convolutional Neural Networks (CNN), Deep Q-Learning (DQN), LangChain, LangGraph
+- TensorFlow, Convolutional Neural Networks (CNN), Deep Q-Learning (DQN), Streamlit
 
 **Programming Languages**
-- Python, PHP, JavaScript
+- Python, PHP, JavaScript, Java
 
 ## Featured Projects
 
